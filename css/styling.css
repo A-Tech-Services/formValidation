@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: hsl(0, 100%, 74%) ;
+    background-image: url("/image/bg-intro-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.rHandSide{
+    align-self: center;
+}
+
+.rHandSide h1{
+    font-weight: 700;
+    color: #fff;
+    max-width: 10em;
+    font-size: 3.5em;
+}
+
+.rHandSide p{
+    color: #fff;
+    max-width: 32em;
+    margin-top: 2em;
+    font-weight: 400;
+}
+
+
+.lHandSide .formTop{
+    background-color: hsl(248, 32%, 49%);
+    padding: 1em;
+    border-radius: 0.5em;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 2em;
+    box-shadow: 0 10px 3px rgba(0, 0, 0, 0.185);
+    font-weight: 700;
+}
+
+
+form{
+    border-radius: 0.5em;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 3px rgba(0, 0, 0, 0.185);
+    background-color: #fff;
+    gap: 1em;
+    width: 40em;
+}
+
+input{
+    padding: 1em;
+    border-radius: 0.5em;
+    border: 1px solid hsl(246, 25%, 77%);
+}
+
+button{
+    padding: 1em;
+    border-radius: 0.5em;
+    border: none;
+    background-color: hsl(154, 59%, 51%);
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+button:hover{
+    background-color: hsl(154, 52%, 72%);
+}
+
+form p{
+    text-align: center;
+    font-size: 14px;
+    color: hsl(246, 25%, 77%);
+    font-weight: 600;
+}
+
+
+.error1, .error2, .error3, .error4{
+    display: none;
+}
+
+.error1.active{
+    display: block;
+}
+
+.error2.active{
+    display: block;
+}
+
+.error3.active{
+    display: block;
+}
+
+.error4.active{
+    display: block;
+}

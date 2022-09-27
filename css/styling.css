@@ -15,12 +15,14 @@ body{
 }
 
 .container{
+    max-width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
     justify-content: space-between;
+    gap: 5em;
 }
 
 .rHandSide{
@@ -31,16 +33,20 @@ body{
     font-weight: 700;
     color: #fff;
     max-width: 10em;
-    font-size: 3.5em;
+    line-height: 1.2;
 }
 
 .rHandSide p{
     color: #fff;
-    max-width: 32em;
+    max-width: 45em;
     margin-top: 2em;
     font-weight: 400;
 }
 
+.lHandSide{
+    max-width: 100%;
+    max-height: 100%;
+}
 
 .lHandSide .formTop{
     background-color: hsl(248, 32%, 49%);
@@ -51,6 +57,8 @@ body{
     margin-bottom: 2em;
     box-shadow: 0 10px 3px rgba(0, 0, 0, 0.185);
     font-weight: 700;
+    width: inherit;
+    height: inherit;
 }
 
 
@@ -58,11 +66,25 @@ form{
     border-radius: 0.5em;
     padding: 2em;
     display: flex;
+    gap: 1em;
     flex-direction: column;
     box-shadow: 0 10px 3px rgba(0, 0, 0, 0.185);
     background-color: #fff;
-    gap: 1em;
-    width: 40em;
+    width: inherit;
+    height: inherit;
+}
+
+
+
+.icons{
+    color: hsl(0, 100%, 74%) ;
+    text-align: right;
+    font-weight: 600;
+    display: none;
+}
+
+.icons.active{
+    display: block;
 }
 
 input{
@@ -86,7 +108,7 @@ button:hover{
     background-color: hsl(154, 52%, 72%);
 }
 
-form p{
+form .termAgree{
     text-align: center;
     font-size: 14px;
     color: hsl(246, 25%, 77%);
@@ -94,8 +116,14 @@ form p{
 }
 
 
-.error1, .error2, .error3, .error4{
+.errors{
     display: none;
+    color: hsl(0, 100%, 74%) ;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: -1em;
+    
 }
 
 .error1.active{
@@ -112,4 +140,35 @@ form p{
 
 .error4.active{
     display: block;
+}
+
+
+@media(max-width: 1438px){
+    .container{
+        flex-direction: column;
+        align-items: center;
+        max-height: 100%;
+        gap: 2em;       
+    }
+
+    .rHandSide h1{
+        text-align: center;
+        margin: auto;
+    }
+    
+    .rHandSide p{
+        text-align: center;
+        margin-top: 2em;
+        margin: auto;
+    }
+
+    .lHandSide .formTop{
+        font-size: 14px;
+    }
+
+    form{
+        padding: 2em;
+        width: inherit;
+        height: inherit;
+    }
 }

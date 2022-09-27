@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Oluwapelumi">
     <title>Form Validation</title>
+    <!-- font awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- favicon -->
     <link rel="shortcut icon" href="/image/favicon-32x32.png" type="image/x-icon">
-
-    <!-- Bootstrap CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
 
     <!-- external Css stylesheet -->
     <link rel="stylesheet" href="/css/styling.css">
@@ -37,21 +37,25 @@
             <div class="formTop">Try it free 7 days <span style="font-weight: 400;">then $20/mo. thereafter</span></div>
 
             <form name="myForm" onsubmit="return validateForm()">
+                <i class="fa-solid fa-circle-exclamation icons"></i>
                 <input type="text" name="fname" placeholder="First Name">
-                <p class="error1">First Name can't be empty</p>
+                <p class="errors error1">First Name can't be empty</p>
 
+                <i class="fa-solid fa-circle-exclamation icons"></i>
                 <input type="text" name="lname" placeholder="Last Name">
-                <p class="error2">Last Name Can't be empty</p>
+                <p class="errors error2">Last Name Can't be empty</p>
 
+                <i class="fa-solid fa-circle-exclamation icons"></i>
                 <input type="email" name="email" placeholder="Email Address">
-                <p class="error3">Looks like this is not an email</p>
+                <p class="errors error3">Looks like this is not an email</p>
 
+                <i class="fa-solid fa-circle-exclamation icons"></i>
                 <input type="password" name="pass" placeholder="Password">
-                <p class="error4">Password can't be empty</p>
+                <p class="errors error4">Password can't be empty</p>
 
                 <button type="submit">CLAIM YOUR FREE TRIAL</button>
 
-                <p>By clicking the button you are agreeing to
+                <p class="termAgree">By clicking the button you are agreeing to
                     our <span style="color: hsl(0, 100%, 74%);">Terms and Services</span>
                 </p>
             </form>
@@ -62,11 +66,6 @@
 
 
 
-    
-
-
-    <!-- Bootstrap javaScript CDN -->
-    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- External javaScript -->
     <script src="/javaScript/script.js"></script>

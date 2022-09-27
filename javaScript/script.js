@@ -2,6 +2,7 @@ let error1 = document.querySelector(".error1");
 let error2 = document.querySelector(".error2");
 let error3 = document.querySelector(".error3");
 let error4 = document.querySelector(".error4");
+let iconerror = document.querySelector(".icons");
 
 function validateForm(){
     let firstName = document.forms["myForm"]["fname"].value.trim();
